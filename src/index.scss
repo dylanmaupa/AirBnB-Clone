@@ -8,8 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: #f9f9f9f9;
+}
+
 nav {
-    border: 1px solid green;
+    border-radius: 10px 10px 0px 0px;
     width: 100%;
     display: flex;
     padding: 20px;
@@ -17,9 +21,13 @@ nav {
 }
 
 .main-wrapper {
+    background: #fff;
     max-width: 60vw;
+    box-shadow: 3px 6px 6px #ccc;
     margin: 0 auto;
-    border: 1px solid #000;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
 
     #hero {
         text-align: center;
@@ -27,9 +35,59 @@ nav {
         padding: 50px 0;
 
         img {
-            width: 70%;
+            width: 80%;
         }
     }
 
+    #exp {
+        padding: 0 30px;
+
+        h1{
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .mySwiper {
+            // margin: 0 auto !important;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .slide {
+    
+            img {
+                margin: 0 auto !important;
+                width: 100%;
+    
+            }
+    
+            .textBox {
+                p {
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin: 5px 0;
+                }
+    
+                p:first-child {
+                    margin: 0;
+                    span {
+                        color: #918E9B;
+                    }
+                }
+                p:last-child{
+                    margin: 0;
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+    
+    
+        }
+    }
 
 }
